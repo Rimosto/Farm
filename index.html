@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rimomo Farm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Rimomo Farm</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#tours">Farm Tours</a>
+            <a href="#updates">Updates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+    <h1>Fresh Avocados & Healthy Seedlings</h1>
+    <p>We grow premium avocados in the heart of Kenya. Our farm is committed to quality, freshness, and sustainable farming practices.</p>
+    <div class="buttons">
+        <a href="#products" class="btn">Shop Now</a>
+        <a href="#tours" class="btn btn-alt">Book a Tour</a>
+    </div>
+</section>
+
+    <!-- About Section -->
+<section id="about">
+    <h2>About Rimomo Farm</h2>
+    <p>Founded in 2015, Rimomo Farm is a privately-owned avocado farm located in Uplands, Kenya. We specialize in growing Hass and Fuerte avocados, nurturing seedlings for farmers, and producing high-quality avocado-based products.  
+    Our mission is to promote sustainable agriculture while providing customers with fresh, healthy produce straight from the source.</p>
+</section>
+
+
+    <!-- Products Section -->
+   <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+        <div class="product-card">
+            <img src="img/avocados.jpg" alt="Fresh Avocados">
+            <h3>Fresh Avocados</h3>
+            <p>Hass & Fuerte varieties – harvested at peak ripeness.</p>
+            <p><strong>KES 150 per kg</strong></p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="img/seedlings.jpg" alt="Avocado Seedlings">
+            <h3>Avocado Seedlings</h3>
+            <p>Grafted seedlings ready for planting.</p>
+            <p><strong>KES 250 each</strong></p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="img/oil.jpg" alt="Avocado Oil">
+            <h3>Avocado Oil</h3>
+            <p>Cold-pressed oil – 100% pure and natural.</p>
+            <p><strong>KES 800 per 500ml</strong></p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Tours Section -->
+  <section id="tours">
+    <h2>Farm Tours</h2>
+    <p>Experience life on Rimomo Farm! Learn how avocados are grown, walk through our orchards, and taste fresh produce straight from the tree.</p>
+    <p><strong>Tour Days:</strong> Saturday & Sunday</p>
+    <p><strong>Time:</strong> 9:00 AM – 3:00 PM</p>
+    <p><strong>Price:</strong> KES 500 per person (includes snacks and refreshments)</p>
+
+    <form action="https://formspree.io/f/myzpoyke" method="POST" class="booking-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="date">Preferred Tour Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="people">Number of People</label>
+        <input type="number" id="people" name="people" min="1" required>
+
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+
+        <button type="submit">Book My Tour</button>
+    </form>
+</section>
+
+
+    <!-- Updates Section -->
+   <section id="updates">
+    <h2>Latest Updates</h2>
+    <div class="updates-list">
+        <div class="update-card">
+            <h3>🌱 New Seedling Batch Ready</h3>
+            <p>We have a fresh batch of Hass and Fuerte avocado seedlings – available while stocks last.</p>
+        </div>
+        <div class="update-card">
+            <h3>🥑 Avocado Harvest Festival</h3>
+            <p>Join us this August for a celebration of avocados – farm tours, tasting, and discounts.</p>
+        </div>
+        <div class="update-card">
+            <h3>💧 Irrigation Upgrade Completed</h3>
+            <p>We’ve upgraded our irrigation system to improve crop yield and conserve water.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@rimomofarm.com</p>
+    <p>Phone: +254 722 716 985</p>
+    <p>Location: Rimomo Farm, Uplands, Kenya</p>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rimomo Farm. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
