@@ -66,6 +66,39 @@
     </div>
 </section>
 
+<!-- Buy Now button -->
+<button onclick="orderProduct('Fresh Avocados')">Buy Now</button>
+
+<!-- Hidden Order Form -->
+<div id="order-form" style="display:none;">
+    <h3>Place Your Order</h3>
+    <form action="https://formspree.io/f/mvgqloaw" method="POST">
+        <label>Product</label>
+        <input type="text" id="product" name="product" readonly>
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Phone / Email</label>
+        <input type="text" name="contact" required>
+
+        <label>Quantity</label>
+        <input type="number" name="quantity" required>
+
+        <label>Delivery Address</label>
+        <textarea name="address"></textarea>
+
+        <button type="submit">Send Order</button>
+    </form>
+</div>
+
+<script>
+function orderProduct(productName) {
+    document.getElementById('product').value = productName;
+    document.getElementById('order-form').style.display = 'block';
+    document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
 
     <!-- Tours Section -->
   <section id="tours">
